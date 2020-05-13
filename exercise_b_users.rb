@@ -45,12 +45,12 @@ users = {
     :twitter => "bridgpally",
     :lottery_numbers => [12, 14, 33, 38, 9, 25],
     :home_town => "Dunbar",
-      :pets => [
+    :pets => [
         {
           :name => "monty",
           :species => "snake"
         }
-      ]
+    ]
   }
 }
 
@@ -59,8 +59,11 @@ p users["Jonathan"][:twitter]
 # 2. Get Erik's hometown
 p users["Erik"][:home_town]
 # 3. Get the array of Erik's lottery numbers
+p users["Erik"][:lottery_numbers]
 # 4. Get the species of Avril's pet Monty
+p users["Avril"][:pets][0][:species]
 # 5. Get the smallest of Erik's lottery numbers
+p users["Erik"][:lottery_numbers].smallest()
 # 6. Return an array of Avril's lottery numbers that are even
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 # 8. Change Erik's hometown to Edinburgh
