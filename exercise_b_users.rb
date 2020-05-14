@@ -83,4 +83,5 @@ p users["Erik"][:home_town]
 users["Erik"][:pets][4] = {name:"Fluffy", species: "dog"}
 p users["Erik"][:pets]
 # 10. Add another person to the users hash
-
+users[3] = "John"
+p users[3]
